@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- SLICK CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="./assets/css/c3.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- content -->
+    <div class="container">
+      <h2 class="display-4 text-white">GetViral</h2>
+      <div class="separator"></div>
+      <div class="overview-leaderboard">
+        <div class="over-view-head d-flex justify-content-between">
+          <h2 class="mb-0">Task Overview</h2>
+          <h5 class="mb-0">Available Balance: N250,000</h5>
+        </div>
+        <div id="card-overview" class="card-overview overview">
+          <div id="card-overview-0" class="sliding card overview m-2">
+            <div class="card-body over-view">
+              <h5 class="card-title">CocaCola Tasks Overview</h5>
+              <div class="start-date d-flex justify-content-between">
+                <h5>Start Date:</h5>
+                <h5>June 10, 2020</h5>
+              </div>
+              <div class="end-date d-flex justify-content-between">
+                <h5>End Date:</h5>
+                <h5>August 10, 2020</h5>
+              </div>
+              <div class="impression d-flex justify-content-between">
+                <h5>Impressions:</h5>
+                <h5>2,347.444</h5>
+              </div>
+              <div class="t-impression d-flex justify-content-between">
+                <h5>Targeted Impression:</h5>
+                <h5>4,000,000</h5>
+              </div>
+              <div
+                class="chart-round d-flex flex-row justify-content-center justify-content-lg-between"
+              >
+                <div style="width: 155px; height: 155px;">
+                  <canvas id="myChart0" width="155" height="155"></canvas>
+                </div>
+                <div class="percent h-100 my-auto">
+                  <h1>64%</h1>
+                  <h5 class="text-center">Complete</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="task-insight bg-white px-3 py-2">
+          <div
+            class="t-head d-flex flex-column flex-lg-row p-3 justify-content-between"
+          >
+            <h3>Task Insight</h3>
+            <div class="t-selectors d-flex">
+              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                <button
+                  type="button"
+                  class="form-control btn btn-default dropdown-toggle task"
+                  data-toggle="dropdown"
+                >
+                  <span class="pr-4">Task</span>
+                </button>
+                <div class="dropdown-menu task" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Task 1</button>
+                  <button class="dropdown-item" type="button">
+                    Task 2
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Task 3
+                  </button>
+                </div>
+              </div>
+              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                <button
+                  type="button"
+                  class="form-control btn btn-default dropdown-toggle week"
+                  data-toggle="dropdown"
+                >
+                  <span class="pr-4">Day of the week</span>
+                </button>
+                <div class="dropdown-menu week" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Task 1</button>
+                  <button class="dropdown-item" type="button">
+                    Task 2
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Task 3
+                  </button>
+                </div>
+              </div>
+              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                <button
+                  type="button"
+                  class="form-control btn btn-default dropdown-toggle engagement"
+                  data-toggle="dropdown"
+                >
+                  <span class="pr-4">Engagement</span>
+                </button>
+                <div
+                  class="dropdown-menu engagement"
+                  aria-labelledby="dropdownMenu2"
+                >
+                  <button class="dropdown-item" type="button">Task 1</button>
+                  <button class="dropdown-item" type="button">
+                    Task 2
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Task 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="line-chart"></div>
+          <div class="t-end d-flex ml-5 mr-2 justify-content-between pb-3 pt-3">
+            <div class="d-legend d-inline-flex w-fit"></div>
+            <div class="t-date d-inline-flex h-100 w-fit my-auto">
+              <i class="fas fa-chevron-left t-left-icon my-auto"></i>
+              <span class="t-date">
+                <span class="d-from pl-4">Jul 10 </span> -
+                <span class="d-from"> Jul 22</span>,
+                <span class="d-year pr-4">2020</span>
+              </span>
+              <i class="fas fa-chevron-right t-right-icon my-auto"></i>
+            </div>
+            <button
+              type="button"
+              class="btn export w-fit"
+              data-toggle="dropdown"
+            >
+              <span class="pl-3 d-inline-flex">Export Data</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="arrival-leaderboard">
+        <div
+          class="a-head d-flex flex-column flex-lg-row p-3 justify-content-between"
+        >
+          <h3>New Arrivals</h3>
+          <div class="t-arrival d-flex">
+            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+              <button
+                type="button"
+                class="form-control btn btn-default dropdown-toggle task"
+                data-toggle="dropdown"
+              >
+                <span class="pr-4">Categories</span>
+              </button>
+              <div class="dropdown-menu task" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Task 1</button>
+                <button class="dropdown-item" type="button">
+                  Task 2
+                </button>
+                <button class="dropdown-item" type="button">
+                  Task 3
+                </button>
+              </div>
+            </div>
+            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+              <button
+                type="button"
+                class="form-control btn btn-default dropdown-toggle week"
+                data-toggle="dropdown"
+              >
+                <span class="pr-4">Service option</span>
+              </button>
+              <div class="dropdown-menu week" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Task 1</button>
+                <button class="dropdown-item" type="button">
+                  Task 2
+                </button>
+                <button class="dropdown-item" type="button">
+                  Task 3
+                </button>
+              </div>
+            </div>
+            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+              <button
+                type="button"
+                class="form-controll btn border-0 dropdown-toggler week"
+                data-toggle="dropdown"
+              >
+                <span class="pr-4"></span>
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-right week"
+                aria-labelledby="dropdownMenu2"
+              >
+                <button class="dropdown-item" type="button">
+                  Sort by Date started
+                </button>
+                <button class="dropdown-item" type="button">
+                  Sort by Target Impression
+                </button>
+                <button class="dropdown-item" type="button">
+                  Sort by Name
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>New Arrivals</h2>
+        <div id="card-arrival" class="card-arrival arrival">
+          <div id="card-arrival-0" class="sliding card arrival m-2">
+            <div class="card-body">
+              <h5 class="card-title">Star Lager Tasks</h5>
+              <div class="start-date d-flex justify-content-between">
+                <h5>Start Date:</h5>
+                <h5>June 10, 2020</h5>
+              </div>
+              <div class="end-date d-flex justify-content-between">
+                <h5>End Date:</h5>
+                <h5>August 10, 2020</h5>
+              </div>
+              <div class="impression d-flex justify-content-between">
+                <h5>Impressions:</h5>
+                <h5>2,347.444</h5>
+              </div>
+              <div class="t-impression d-flex justify-content-between">
+                <h5>Targeted Impression:</h5>
+                <h5>4,000,000</h5>
+              </div>
+              <div
+                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-lg-between"
+              >
+                <div style="width: 155px; height: 155px;">
+                  <canvas
+                    id="Arrival-myChart0"
+                    width="155"
+                    height="155"
+                  ></canvas>
+                </div>
+                <div class="percent h-100 my-auto">
+                  <button class="p">Start</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End content -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./assets/js/c3.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
