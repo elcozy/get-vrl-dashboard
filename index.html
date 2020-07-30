@@ -42,7 +42,7 @@
 
   <body>
     <!-- content -->
-    <div class="container py-3">
+    <div class="container-xl">
       <div class="overview-leaderboard">
         <div class="over-view-head d-flex justify-content-between">
           <h2 class="mb-0">Task Overview</h2>
@@ -89,8 +89,10 @@
               class="t-head d-flex flex-column flex-lg-row p-3 justify-content-between px-3 py-2"
             >
               <h3>Task Insight</h3>
-              <div class="t-selectors d-flex">
-                <div class="btn-group ml-0 ml-lg-5 pr-lg-0">
+              <div
+                class="t-selectors d-flex flex-wrap justify-content-center flex-md-nowrap"
+              >
+                <div class="btn-group ml-0 ml-lg-5 pr-lg-0 col">
                   <button
                     type="button"
                     class="form-control btn btn-default dropdown-toggle task"
@@ -102,16 +104,18 @@
                     class="dropdown-menu task"
                     aria-labelledby="dropdownMenu2"
                   >
-                    <button class="dropdown-item" type="button">Task 1</button>
                     <button class="dropdown-item" type="button">
-                      Task 2
+                      <span class="pr-4">Task 1</span>
                     </button>
                     <button class="dropdown-item" type="button">
-                      Task 3
+                      <span class="pr-4">Task 2</span>
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      <span class="pr-4">Task 3</span>
                     </button>
                   </div>
                 </div>
-                <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                <div class="btn-group ml-sm-2 pt-0 ml-lg-5 pr-lg-0 col">
                   <button
                     type="button"
                     class="form-control btn btn-default dropdown-toggle week"
@@ -123,16 +127,18 @@
                     class="dropdown-menu week"
                     aria-labelledby="dropdownMenu2"
                   >
-                    <button class="dropdown-item" type="button">Task 1</button>
                     <button class="dropdown-item" type="button">
-                      Task 2
+                      <span class="pr-4">Task 1</span>
                     </button>
                     <button class="dropdown-item" type="button">
-                      Task 3
+                      <span class="pr-4">Task 2</span>
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      <span class="pr-4">Task 3</span>
                     </button>
                   </div>
                 </div>
-                <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                <div class="btn-group ml-0 pt-4 pt-md-0 ml-lg-5 pr-lg-0 col-md">
                   <button
                     type="button"
                     class="form-control btn btn-default dropdown-toggle engagement"
@@ -144,12 +150,14 @@
                     class="dropdown-menu engagement"
                     aria-labelledby="dropdownMenu2"
                   >
-                    <button class="dropdown-item" type="button">Task 1</button>
                     <button class="dropdown-item" type="button">
-                      Task 2
+                      <span class="pr-4">Task 1</span>
                     </button>
                     <button class="dropdown-item" type="button">
-                      Task 3
+                      <span class="pr-4">Task 2</span>
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      <span class="pr-4">Task 3</span>
                     </button>
                   </div>
                 </div>
@@ -189,68 +197,80 @@
         >
           <h3>New Arrivals</h3>
           <div class="t-arrival d-flex">
-            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
               <button
                 type="button"
-                class="form-control btn btn-default dropdown-toggle task"
+                class="form-control btn btn-default dropdown-toggle categories"
                 data-toggle="dropdown"
               >
                 <span class="pr-4">Categories</span>
               </button>
-              <div class="dropdown-menu task" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Task 1</button>
+              <div
+                class="dropdown-menu categories"
+                aria-labelledby="dropdownMenu2"
+              >
                 <button class="dropdown-item" type="button">
-                  Task 2
+                  <span class="pr-4">Task 1</span>
                 </button>
                 <button class="dropdown-item" type="button">
-                  Task 3
+                  <span class="pr-4">Task 2</span>
+                </button>
+                <button class="dropdown-item" type="button">
+                  <span class="pr-4">Task 3</span>
                 </button>
               </div>
             </div>
-            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
               <button
                 type="button"
-                class="form-control btn btn-default dropdown-toggle week"
+                class="form-control btn btn-default dropdown-toggle service"
                 data-toggle="dropdown"
               >
                 <span class="pr-4">Service option</span>
               </button>
-              <div class="dropdown-menu week" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Task 1</button>
+              <div
+                class="dropdown-menu service"
+                aria-labelledby="dropdownMenu2"
+              >
                 <button class="dropdown-item" type="button">
-                  Task 2
+                  <span class="pr-4">Task 1</span>
                 </button>
                 <button class="dropdown-item" type="button">
-                  Task 3
+                  <span class="pr-4">Task 2</span>
+                </button>
+                <button class="dropdown-item" type="button">
+                  <span class="pr-4">Task 3</span>
                 </button>
               </div>
             </div>
-            <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
               <button
                 type="button"
-                class="form-controll btn border-0 dropdown-toggler week"
+                class="form-controll btn border-0 dropdown-toggler sort"
                 data-toggle="dropdown"
               >
                 <span class="pr-4"></span>
               </button>
               <div
-                class="dropdown-menu dropdown-menu-right week"
+                class="dropdown-menu dropdown-menu-right sort"
                 aria-labelledby="dropdownMenu2"
               >
                 <button class="dropdown-item" type="button">
+                  <span class="pr-4"></span>
                   Sort by Date started
                 </button>
                 <button class="dropdown-item" type="button">
+                  <span class="pr-4"></span>
                   Sort by Target Impression
                 </button>
                 <button class="dropdown-item" type="button">
+                  <span class="pr-4"></span>
                   Sort by Name
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <h2>New Arrivals</h2>
         <div id="card-arrival" class="card-arrival arrival">
           <div id="card-arrival-0" class="sliding card arrival m-2">
             <div class="card-body arri-val">
@@ -272,7 +292,7 @@
                 <h5>4,000,000</h5>
               </div>
               <div
-                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-md-between"
+                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-md-between flex-wrap flex-md-nowrap"
               >
                 <div style="width: 155px; height: 155px;">
                   <canvas
@@ -282,7 +302,7 @@
                   ></canvas>
                 </div>
                 <div class="percent h-100 my-auto">
-                  <button class="p">Start</button>
+                  <button class="p mt-4 mt-md-0">Start</button>
                 </div>
               </div>
             </div>

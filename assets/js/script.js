@@ -55,6 +55,15 @@ $(".dropdown-menu.week button").on("click", function () {
 $(".dropdown-menu.engagement button").on("click", function () {
   $(".dropdown-toggle.engagement").html($(this).html());
 });
+$(".dropdown-menu.categories button").on("click", function () {
+  $(".dropdown-toggle.categories").html($(this).html());
+});
+$(".dropdown-menu.service button").on("click", function () {
+  $(".dropdown-toggle.service").html($(this).html());
+});
+$(".dropdown-menu.sort button").on("click", function () {
+  $(".dropdown-toggle.sort").html($(this).html());
+});
 
 // round corners
 // Chart.pluginService.register({
