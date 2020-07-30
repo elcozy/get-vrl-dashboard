@@ -73,9 +73,9 @@ body {
 * ==========================================
 *
 */
-.chartjs-render-monitor {
+/* .chartjs-render-monitor {
   margin-left: -6px;
-}
+} */
 .separator {
   margin-bottom: 5px;
   border-bottom: 1px solid #c4c4c4;
@@ -114,30 +114,6 @@ body {
   font-size: 17px;
   line-height: 26px;
   color: #3a3a3a;
-}
-.over-view .start-date,
-.over-view .end-date,
-.over-view .impression h5:nth-child(1),
-.over-view .t-impression h5:nth-child(1) {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px !important;
-  line-height: 26px;
-  color: var(--main-color);
-}
-.over-view .start-date h5,
-.over-view .end-date h5 {
-  font-size: 17px !important;
-  line-height: 26px;
-  color: var(--main-color);
-}
-.over-view .impression h5:nth-child(2),
-.over-view .t-impression h5:nth-child(2) {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px !important;
-  line-height: 26px;
-  color: #f58b11;
 }
 .chartjs-render-monitor,
 #myChart0 {
@@ -215,11 +191,11 @@ body {
   float: left;
   margin-right: 5px;
 }
-.t-arrival .btn-group:nth-child(3) button span {
+.t-arrival .btn-group:nth-child(3) .form-controll span {
   content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Crect width='30' height='30' fill='url(%23pattern0)'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0' transform='scale(0.03125)'/%3E%3C/pattern%3E%3Cimage id='image0' width='30' height='30' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABR0lEQVRYCe1UQa6CMBBVNMIKjuGCG7DhGv8k30Q3RBPj2jt4DDd/0R3n4AR/ARrrm4UJZFo6VHeWzEB5fZ0pj/TNZt9+zT8lQJ7nqyzL9qj3g6S4tG1b1XV9oxdbLm0TU3E0P2DNL/IV2ziOabyjmy2ZAkVRaBtZiJfg0Ydd8WShlBr0jBjjTSCKogdK3JGiGOxGtMJCgnInTG2Q/TgqpUZ/waLPfmecpulfkiQr1Fgj/7XW567rqqZpSBFAIYICZgWcp8DX4cztOEqGwdEe4utwvRKjQ6YAzrO2rCiB04aNDoc5UcAXBj3FTjjV4US7AWmwG7yzgCJeDscKWQCnEwaHsygX4I8p4DwF0k6+jknGIu0xyvN1TKYAzr0e7eSeLEGhDzM6prcToqgopjomU0DUxUCCcl6O6XRCQy8jFBzTKEsABQo8ASC6bDeicTcsAAAAAElFTkSuQmCC'/%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 .t-arrival .btn-group:nth-child(3) button {
-  width: 50px;
+  /* width: 50px; */
   box-shadow: none !important;
   font-size: x-small;
 }
@@ -227,7 +203,9 @@ body {
   margin-left: -8px;
   margin-right: -8px;
 }
-
+.slick-dotted.slick-slider {
+  margin-bottom: 34px;
+}
 .legend span {
   /* width: 33.333333%; */
   display: inline-block;
@@ -258,7 +236,104 @@ i {
   margin-bottom: auto !important;
   margin-top: auto !important;
 }
-@media only screen and (max-width: 768px) {
+
+path.domain {
+  stroke: #c4c4c4;
+}
+.tick text,
+.c3-legend-item text {
+  fill: #c4c4c4;
+}
+.over-view .start-date,
+.over-view .end-date,
+.over-view .start-date h5,
+.over-view .end-date h5,
+.over-view .impression h5:nth-child(1),
+.over-view .t-impression h5:nth-child(1) {
+  color: var(--main-color);
+}
+.over-view .impression h5:nth-child(2),
+.over-view .t-impression h5:nth-child(2) {
+  color: #f58b11;
+}
+.arri-val .start-date,
+.arri-val .end-date,
+.arri-val .impression h5:nth-child(1),
+.arri-val .t-impression h5:nth-child(1),
+.arri-val .impression h5:nth-child(2),
+.arri-val .t-impression h5:nth-child(2) {
+  color: var(--main-color);
+}
+.over-view-head h2,
+.task-i-out h2 {
+  font-style: normal;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.over-view-head h5 {
+  font-weight: 600;
+  color: #3a3a3a;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.dropdown-menu {
+  min-width: 0;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .btn-group.col,
+  .btn-group.col-12,
+  .btn-group.col-3,
+  .btn-group.col-9,
+  .btn-group.col-md-5,
+  .btn-group.col-md {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .arri-val .start-date,
+  .arri-val .end-date,
+  .arri-val .impression h5:nth-child(1),
+  .arri-val .t-impression h5:nth-child(1),
+  .over-view .start-date,
+  .over-view .end-date,
+  .over-view .impression h5:nth-child(1),
+  .over-view .t-impression h5:nth-child(1) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px !important;
+    line-height: 26px;
+  }
+  .arri-val .start-date h5,
+  .arri-val .end-date h5,
+  .over-view .start-date h5,
+  .over-view .end-date h5 {
+    font-size: 17px !important;
+    line-height: 26px;
+  }
+  .arri-val .impression h5:nth-child(2),
+  .arri-val .t-impression h5:nth-child(2),
+  .over-view .impression h5:nth-child(2),
+  .over-view .t-impression h5:nth-child(2),
+  .task-insight .t-head h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    height: fit-content;
+    /* line-height: 26px; */
+  }
+
+  .btn-group.col,
+  .btn-group.col-12,
+  .btn-group.col-3,
+  .btn-group.col-9,
+  .btn-group.col-md-5,
+  .btn-group.col-md {
+    padding-right: 1px;
+    padding-left: 0;
+  }
   .card-overview .percent {
     display: none;
   }
@@ -279,9 +354,22 @@ i {
     padding-left: var(--p-button);
     padding-right: var(--p-button);
   }
+  .over-view-head h2,
+  .task-i-out h2 {
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.002em;
+  }
+  .over-view-head h5 {
+    font-size: 13px;
+    /* line-height: 26px; */
+    letter-spacing: 0.002em;
+  }
 }
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .form-control span,
+  .export span,
+  .legend span,
   .dropdown-item {
     font-size: 12px;
   }
@@ -293,19 +381,14 @@ i {
   }
   .over-view-head h2,
   .task-i-out h2 {
-    font-style: normal;
-    font-weight: 600;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 0.001em;
-    color: #3a3a3a;
   }
   .over-view-head h5 {
-    font-weight: 600;
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.002em;
-    color: #3a3a3a;
   }
   .over-view .card-title {
     font-weight: 600;
@@ -404,7 +487,7 @@ i {
     padding-right: var(--p-button);
   }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .task-insight .t-head h3 {
     display: block;
   }
@@ -420,7 +503,7 @@ i {
   }
   .t-arrival .btn-group button {
     flex: inherit;
-    width: 144px;
+    width: 158px;
   }
   .btn-group {
     width: auto;

@@ -42,13 +42,13 @@
 
   <body>
     <!-- content -->
-    <div class="container-xl">
+    <div class="container-xl py-4">
       <div class="overview-leaderboard">
         <div class="over-view-head d-flex justify-content-between">
-          <h2 class="mb-0">Task Overview</h2>
-          <h5 class="mb-0">Available Balance: N250,000</h5>
+          <h2 class="d-inline-flex col-7 p-0">Task Overview</h2>
+          <h5 class="col p-0 text-right">Available Balance: N250,000</h5>
         </div>
-        <div id="card-overview" class="card-overview overview">
+        <div id="card-overview" class="card-overview overview py-2">
           <div id="card-overview-0" class="sliding card overview m-2">
             <div class="card-body over-view">
               <h4 class="card-title">CocaCola Tasks Overview</h4>
@@ -72,7 +72,7 @@
                 class="chart-round d-flex flex-row justify-content-center justify-content-md-between"
               >
                 <div style="width: 155px; height: 155px;">
-                  <canvas id="myChart0" width="155" height="155"></canvas>
+                  <canvas id="myChart0" width="1000" height="1000"></canvas>
                 </div>
                 <div class="percent h-100 my-auto">
                   <h1>64%</h1>
@@ -92,7 +92,7 @@
               <div
                 class="t-selectors d-flex flex-wrap justify-content-center flex-md-nowrap"
               >
-                <div class="btn-group ml-0 ml-lg-5 pr-lg-0 col">
+                <div class="btn-group ml-0 ml-lg-5 mr-3 mr-md pr-lg-0 col">
                   <button
                     type="button"
                     class="form-control btn btn-default dropdown-toggle task"
@@ -115,7 +115,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="btn-group ml-sm-2 pt-0 ml-lg-5 pr-lg-0 col">
+                <div class="btn-group ml-sm-0 pt-0 ml-lg-5 pr-lg-0 col">
                   <button
                     type="button"
                     class="form-control btn btn-default dropdown-toggle week"
@@ -167,10 +167,11 @@
             <div class="px-3 py-2">
               <div id="line-chart"></div>
               <div
-                class="t-end d-flex ml-5 mr-2 justify-content-between pb-3 pt-3"
+                class="t-end d-flex ml-md-5 mr-2 justify-content-between pb-3 pt-3 flex-wrap"
               >
-                <div class="d-legend d-inline-flex w-fit"></div>
-                <div class="t-date d-inline-flex h-100 w-fit my-auto">
+                <div
+                  class="t-date d-inline-flex h-100 w-fit justify-content-center col-12 col-md mb-3 my-md-auto"
+                >
                   <i class="fas fa-chevron-left t-left-icon my-auto"></i>
                   <span class="t-date">
                     <span class="d-from pl-4">Jul 10 </span> -
@@ -179,12 +180,13 @@
                   </span>
                   <i class="fas fa-chevron-right t-right-icon my-auto"></i>
                 </div>
+                <div class="d-legend d-inline-flex w-fit order-md-first"></div>
                 <button
                   type="button"
                   class="btn export w-fit"
                   data-toggle="dropdown"
                 >
-                  <span class="pl-3 d-inline-flex">Export Data</span>
+                  <span class="pl-3 d-inline-flex my-auto">Export Data</span>
                 </button>
               </div>
             </div>
@@ -196,8 +198,12 @@
           class="a-head d-flex flex-column flex-lg-row p-3 justify-content-between"
         >
           <h3>New Arrivals</h3>
-          <div class="t-arrival d-flex">
-            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
+          <div
+            class="t-arrival d-flex flex-wrap justify-content-center flex-md-nowrap"
+          >
+            <div
+              class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-0 pr-lg-0 col-12 col-md-5"
+            >
               <button
                 type="button"
                 class="form-control btn btn-default dropdown-toggle categories"
@@ -220,7 +226,9 @@
                 </button>
               </div>
             </div>
-            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
+            <div
+              class="btn-group ml-sm-0 pt-4 pt-md-0 ml-lg-0 pr-lg-0 col-10 col-md-5"
+            >
               <button
                 type="button"
                 class="form-control btn btn-default dropdown-toggle service"
@@ -243,29 +251,28 @@
                 </button>
               </div>
             </div>
-            <div class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-5 pr-lg-0">
+            <div
+              class="btn-group ml-sm-2 pt-4 pt-md-0 ml-lg-0 pr-lg-0 col col-md"
+            >
               <button
                 type="button"
                 class="form-controll btn border-0 dropdown-toggler sort"
                 data-toggle="dropdown"
               >
-                <span class="pr-4"></span>
+                <span class="pr-0"></span>
               </button>
               <div
                 class="dropdown-menu dropdown-menu-right sort"
                 aria-labelledby="dropdownMenu2"
               >
                 <button class="dropdown-item" type="button">
-                  <span class="pr-4"></span>
-                  Sort by Date started
+                  <span>Sort by Date started</span>
                 </button>
                 <button class="dropdown-item" type="button">
-                  <span class="pr-4"></span>
-                  Sort by Target Impression
+                  <span>Sort by Target Impression</span>
                 </button>
                 <button class="dropdown-item" type="button">
-                  <span class="pr-4"></span>
-                  Sort by Name
+                  <span>Sort by Name</span>
                 </button>
               </div>
             </div>
@@ -292,17 +299,17 @@
                 <h5>4,000,000</h5>
               </div>
               <div
-                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-md-between flex-wrap flex-md-nowrap"
+                class="chart-round d-flex flex-md-row flex-column justify-content-center justify-content-md-between"
               >
-                <div style="width: 155px; height: 155px;">
+                <div style="width: 155px; height: 155px;" class="mx-auto">
                   <canvas
                     id="Arrival-myChart0"
-                    width="155"
-                    height="155"
+                    width="1000"
+                    height="1000"
                   ></canvas>
                 </div>
-                <div class="percent h-100 my-auto">
-                  <button class="p mt-4 mt-md-0">Start</button>
+                <div class="percent h-100 w-fit mx-auto my-auto">
+                  <button class="p mt-4 mt-md-0 mx-auto">Start</button>
                 </div>
               </div>
             </div>

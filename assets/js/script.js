@@ -340,7 +340,8 @@ const lineChart = c3.generate({
     },
   },
   padding: {
-    right: 26,
+    left: 45,
+    right: 0,
     bottom: 0,
   },
   axis: {
