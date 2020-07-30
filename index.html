@@ -42,9 +42,7 @@
 
   <body>
     <!-- content -->
-    <div class="container">
-      <h2 class="display-4 text-white">GetViral</h2>
-      <div class="separator"></div>
+    <div class="container py-3">
       <div class="overview-leaderboard">
         <div class="over-view-head d-flex justify-content-between">
           <h2 class="mb-0">Task Overview</h2>
@@ -53,7 +51,7 @@
         <div id="card-overview" class="card-overview overview">
           <div id="card-overview-0" class="sliding card overview m-2">
             <div class="card-body over-view">
-              <h5 class="card-title">CocaCola Tasks Overview</h5>
+              <h4 class="card-title">CocaCola Tasks Overview</h4>
               <div class="start-date d-flex justify-content-between">
                 <h5>Start Date:</h5>
                 <h5>June 10, 2020</h5>
@@ -71,7 +69,7 @@
                 <h5>4,000,000</h5>
               </div>
               <div
-                class="chart-round d-flex flex-row justify-content-center justify-content-lg-between"
+                class="chart-round d-flex flex-row justify-content-center justify-content-md-between"
               >
                 <div style="width: 155px; height: 155px;">
                   <canvas id="myChart0" width="155" height="155"></canvas>
@@ -84,90 +82,104 @@
             </div>
           </div>
         </div>
-        <div class="task-insight bg-white px-3 py-2">
-          <div
-            class="t-head d-flex flex-column flex-lg-row p-3 justify-content-between"
-          >
-            <h3>Task Insight</h3>
-            <div class="t-selectors d-flex">
-              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
-                <button
-                  type="button"
-                  class="form-control btn btn-default dropdown-toggle task"
-                  data-toggle="dropdown"
-                >
-                  <span class="pr-4">Task</span>
-                </button>
-                <div class="dropdown-menu task" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Task 1</button>
-                  <button class="dropdown-item" type="button">
-                    Task 2
-                  </button>
-                  <button class="dropdown-item" type="button">
-                    Task 3
-                  </button>
-                </div>
-              </div>
-              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
-                <button
-                  type="button"
-                  class="form-control btn btn-default dropdown-toggle week"
-                  data-toggle="dropdown"
-                >
-                  <span class="pr-4">Day of the week</span>
-                </button>
-                <div class="dropdown-menu week" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Task 1</button>
-                  <button class="dropdown-item" type="button">
-                    Task 2
-                  </button>
-                  <button class="dropdown-item" type="button">
-                    Task 3
-                  </button>
-                </div>
-              </div>
-              <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
-                <button
-                  type="button"
-                  class="form-control btn btn-default dropdown-toggle engagement"
-                  data-toggle="dropdown"
-                >
-                  <span class="pr-4">Engagement</span>
-                </button>
-                <div
-                  class="dropdown-menu engagement"
-                  aria-labelledby="dropdownMenu2"
-                >
-                  <button class="dropdown-item" type="button">Task 1</button>
-                  <button class="dropdown-item" type="button">
-                    Task 2
-                  </button>
-                  <button class="dropdown-item" type="button">
-                    Task 3
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="line-chart"></div>
-          <div class="t-end d-flex ml-5 mr-2 justify-content-between pb-3 pt-3">
-            <div class="d-legend d-inline-flex w-fit"></div>
-            <div class="t-date d-inline-flex h-100 w-fit my-auto">
-              <i class="fas fa-chevron-left t-left-icon my-auto"></i>
-              <span class="t-date">
-                <span class="d-from pl-4">Jul 10 </span> -
-                <span class="d-from"> Jul 22</span>,
-                <span class="d-year pr-4">2020</span>
-              </span>
-              <i class="fas fa-chevron-right t-right-icon my-auto"></i>
-            </div>
-            <button
-              type="button"
-              class="btn export w-fit"
-              data-toggle="dropdown"
+        <div class="task-i-out">
+          <h2>Task Insight</h2>
+          <div class="task-insight bg-white p-0">
+            <div
+              class="t-head d-flex flex-column flex-lg-row p-3 justify-content-between px-3 py-2"
             >
-              <span class="pl-3 d-inline-flex">Export Data</span>
-            </button>
+              <h3>Task Insight</h3>
+              <div class="t-selectors d-flex">
+                <div class="btn-group ml-0 ml-lg-5 pr-lg-0">
+                  <button
+                    type="button"
+                    class="form-control btn btn-default dropdown-toggle task"
+                    data-toggle="dropdown"
+                  >
+                    <span class="pr-4">Task</span>
+                  </button>
+                  <div
+                    class="dropdown-menu task"
+                    aria-labelledby="dropdownMenu2"
+                  >
+                    <button class="dropdown-item" type="button">Task 1</button>
+                    <button class="dropdown-item" type="button">
+                      Task 2
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Task 3
+                    </button>
+                  </div>
+                </div>
+                <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                  <button
+                    type="button"
+                    class="form-control btn btn-default dropdown-toggle week"
+                    data-toggle="dropdown"
+                  >
+                    <span class="pr-4">Day of the week</span>
+                  </button>
+                  <div
+                    class="dropdown-menu week"
+                    aria-labelledby="dropdownMenu2"
+                  >
+                    <button class="dropdown-item" type="button">Task 1</button>
+                    <button class="dropdown-item" type="button">
+                      Task 2
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Task 3
+                    </button>
+                  </div>
+                </div>
+                <div class="btn-group ml-2 ml-lg-5 pr-lg-0">
+                  <button
+                    type="button"
+                    class="form-control btn btn-default dropdown-toggle engagement"
+                    data-toggle="dropdown"
+                  >
+                    <span class="pr-4">Engagement</span>
+                  </button>
+                  <div
+                    class="dropdown-menu engagement"
+                    aria-labelledby="dropdownMenu2"
+                  >
+                    <button class="dropdown-item" type="button">Task 1</button>
+                    <button class="dropdown-item" type="button">
+                      Task 2
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Task 3
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="px-3 py-2">
+              <div id="line-chart"></div>
+              <div
+                class="t-end d-flex ml-5 mr-2 justify-content-between pb-3 pt-3"
+              >
+                <div class="d-legend d-inline-flex w-fit"></div>
+                <div class="t-date d-inline-flex h-100 w-fit my-auto">
+                  <i class="fas fa-chevron-left t-left-icon my-auto"></i>
+                  <span class="t-date">
+                    <span class="d-from pl-4">Jul 10 </span> -
+                    <span class="d-from"> Jul 22</span>,
+                    <span class="d-year pr-4">2020</span>
+                  </span>
+                  <i class="fas fa-chevron-right t-right-icon my-auto"></i>
+                </div>
+                <button
+                  type="button"
+                  class="btn export w-fit"
+                  data-toggle="dropdown"
+                >
+                  <span class="pl-3 d-inline-flex">Export Data</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -241,8 +253,8 @@
         <h2>New Arrivals</h2>
         <div id="card-arrival" class="card-arrival arrival">
           <div id="card-arrival-0" class="sliding card arrival m-2">
-            <div class="card-body">
-              <h5 class="card-title">Star Lager Tasks</h5>
+            <div class="card-body arri-val">
+              <h4 class="card-title">Star Lager Tasks</h4>
               <div class="start-date d-flex justify-content-between">
                 <h5>Start Date:</h5>
                 <h5>June 10, 2020</h5>
@@ -260,7 +272,7 @@
                 <h5>4,000,000</h5>
               </div>
               <div
-                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-lg-between"
+                class="chart-round d-flex flex-row flex-xs-row justify-content-center justify-content-md-between"
               >
                 <div style="width: 155px; height: 155px;">
                   <canvas
