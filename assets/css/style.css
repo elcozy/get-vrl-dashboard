@@ -11,11 +11,12 @@
   --main-grey-color: #233a3a;
   --bg-light: #f0f7ff;
   --p-button: 1.9rem;
+  --sideBar-secondary-color: #f5f6fa;
 }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background: #f0f7ff;
+  background: var(--sideBar-secondary-color);
   min-height: 100vh;
   /* overflow-x: hidden; */
 }
