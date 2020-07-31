@@ -157,7 +157,9 @@ body {
   border-radius: 4px;
   text-align: left;
 }
-
+button.navbar-toggler.px-0 {
+  border: 0;
+}
 /* .btn-group {
   width: 100%;
 } */
