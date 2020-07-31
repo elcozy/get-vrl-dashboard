@@ -1,31 +1,3 @@
-$(function () {
-  // Sidebar toggle behavior
-  $("#sidebarCollapse").on("click", function () {
-    $("#sidebar, #content").toggleClass("active");
-  });
-});
-// Get the element
-
-// var elem = document.querySelector("#splide__slide");
-// var elem = document.querySelector(".splide__slide");
-// for (var i = 1; i < 4; i++) {
-//   // Create a copy of it
-//   var clone = elem.cloneNode(true);
-//   // Update the ID and add a class
-//   // clone.id = "card-overview-" + i;
-//   clone.getElementsByTagName("div")[0].id = "card-overview-" + i;
-//   clone.getElementsByTagName("canvas")[0].id = "myChart" + i;
-//   // Inject it into the DOM
-//   elem.after(clone);
-// }
-// document.addEventListener("DOMContentLoaded", function () {
-//   new Splide("#splide", {
-//     type: "loop",
-//     perPage: 3,
-//     // focus: "center",
-//     perMove: 1,
-//   }).mount();
-// });
 var elem = document.querySelector("#card-overview-0");
 for (var i = 1; i < 5; i++) {
   // Create a copy of it
