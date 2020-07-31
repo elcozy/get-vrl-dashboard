@@ -13,7 +13,10 @@
   --p-button: 1.9rem;
   --sideBar-secondary-color: #f5f6fa;
 }
-
+a.header__link-list-active.header__link-active {
+  color: var(--fc-secondary) !important;
+  text-decoration: none !important;
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
   background: var(--sideBar-secondary-color);
